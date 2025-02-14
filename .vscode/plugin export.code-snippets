@@ -1,0 +1,15 @@
+{
+	"Plugin Snippet": {
+		"scope": "javascript",
+		"prefix": "eeee",
+		"body": [
+			"export const handler='$1'",
+			"export const description='$2'",
+			"export default async ({ sock, m, id, psn, sender, noTel, caption,attf }) => {",
+			"\t$3",
+			"};",
+			"$4" // Cursor akhir
+		],
+		"description": "Snippet untuk plugin export default"
+	},
+}
