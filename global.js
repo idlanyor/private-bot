@@ -2,7 +2,7 @@
 globalThis.owner = "Roy";
 globalThis.ownerNumber = ["62895395590009","6285328913428"]
 globalThis.botNumber = "62895395590009"
-globalThis.sessionName = 'Roy'
+globalThis.sessionName = 'private-bot'
 
 // fungsi dasar
 globalThis.isOwner = (notel) => {

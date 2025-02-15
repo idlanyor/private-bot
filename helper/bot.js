@@ -14,7 +14,7 @@ import { startBot } from "../app.js";
 import { logger } from './logger.js';
 
 class Kanata {
-    constructor(data, io = null) {
+    constructor(data) {
         this.phoneNumber = data.phoneNumber;
         this.sessionId = data.sessionId;
         this.useStore = data.useStore;
@@ -57,7 +57,7 @@ class Kanata {
                 version,
                 logger: P,
                 printQRInTerminal: false,
-                browser: Browsers.macOS("Opera"),
+                browser: Browsers.macOS("Safari"),
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, P),
@@ -79,7 +79,7 @@ class Kanata {
 
                 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
                 let retryCount = 0;
-                const maxRetries = 1;
+                const maxRetries = 2;
 
                 while (retryCount < maxRetries) {
                     try {
